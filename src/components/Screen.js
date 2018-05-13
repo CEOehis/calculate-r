@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Screen({className}) {
+function Screen({className, display}) {
   return (
-    <div className={className}>0</div>
+    <div className={className}>{display}</div>
   );
 }
 
