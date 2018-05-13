@@ -1,0 +1,38 @@
+.app {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 300px;
+  width: 25%;
+  margin: 20px auto;
+  border: 1px solid salmon;
+}
+
+.screen {
+  grid-column: span 4;
+  height: 50px;
+  background: rgb(49, 38, 38);
+  color: white;
+  font-size: 40px;
+  padding: 15px 10px;
+  text-align: right;
+}
+
+.buttons {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.btn {
+  width: 100%;
+  color: #3b3838;
+  background: none;
+  border: none;
+  font-size: 50px;
+  padding: 15px 10px;
+}
+
+.btn.operator {
+  background: rgb(245, 46, 79);
+  color: white;
+}
