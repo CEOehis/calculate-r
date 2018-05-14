@@ -24,7 +24,6 @@ class App extends Component {
 
   componentDidMount() {
     document.addEventListener('keydown', (event) => {
-      const keyName = event.key;
       this.onTap(event.key)
     });
   }
@@ -169,6 +168,7 @@ class App extends Component {
         });
         break;
       case 'Enter':
+      case '=':
         if (this.state.operand1) {
           var sum = this.operate();
           this.setState((prevState) => {
